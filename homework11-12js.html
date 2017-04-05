@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>homework11-12js</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/jQuery.slider.js"></script>
+    <script src="js/tmpl.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="carousel-wrapper clearfix">
+        <div class="carousel-arrow-left"><span>LEFT</span></div>
+        <div class="carousel-hider">
+            <ul class="carousel-list">
+                <li class="carousel-element"><img src="img/img1.jpg" alt="img"><p>text#1</p></li>
+                <li class="carousel-element"><img src="img/img2.jpg" alt="img"><p>text#2</p></li>
+                <li class="carousel-element"><img src="img/img3.jpg" alt="img"><p>text#3</p></li>
+                <li class="carousel-element"><img src="img/img4.jpg" alt="img"><p>text#4</p></li>
+                <li class="carousel-element"><img src="img/img1.jpg" alt="img"><p>text#5</p></li>
+                <li class="carousel-element"><img src="img/img2.jpg" alt="img"><p>text#6</p></li>
+                <li class="carousel-element"><img src="img/img3.jpg" alt="img"><p>text#7</p></li>
+                <li class="carousel-element"><img src="img/img4.jpg" alt="img"><p>text#8</p></li>
+                <li class="carousel-element"><img src="img/img1.jpg" alt="img"><p>text#9</p></li>
+                <li class="carousel-element"><img src="img/img2.jpg" alt="img"><p>text#10</p></li>
+                <li class="carousel-element"><img src="img/img3.jpg" alt="img"><p>text#11</p></li>
+                <li class="carousel-element"><img src="img/img4.jpg" alt="img"><p>text#12</p></li>
+            </ul>
+        </div>
+        <div class="carousel-arrow-right"><span>RIGHT</span></div>
+    </div>
+    <div class="articles-wrapper"></div>
+    <script type="text/template" id="former1">
+        <% for (var i = 0; i < data.length; i++) { %>
+        <div class="articles">
+            <h1><%= data[i].title %></h1>
+            <p><%= data[i].content %></p>
+        </div>
+        <% }; %>
+    </script>
+</body>
+</html>
